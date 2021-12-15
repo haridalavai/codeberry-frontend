@@ -13,7 +13,11 @@ function App() {
       <Sidenav />
       <div
         className=""
-        style={{ width: '100%', height: '100vh', overflow: 'auto' }}
+        style={{
+          width: '100%',
+          height: '100vh',
+          overflow: 'auto',
+        }}
       >
         <Header />
         <div className="" style={{ marginTop: '70px' }}>

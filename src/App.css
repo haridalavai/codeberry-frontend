@@ -4,4 +4,5 @@
   flex-direction: row;
   font-family: 'Be Vietnam Pro', sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }

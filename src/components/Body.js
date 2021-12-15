@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import UserCard from './UserCard';
-import { users } from '../users';
+import axios from 'axios';
+// import { users } from '../users';
 import './Body.css';
 import Users from './Users';
 
 const Body = () => {
+  const [users, setUsers] = useState();
+  useEffect(async () => {
+    const users = await axios.get(
+      'https://pure-coast-84901.herokuapp.com/users',
+    );
+    setUsers(users.data);
+    console.log(users.data);
+  }, []);
   return (
     <div className="users">
       <span className="users__userCards">User Cards</span>

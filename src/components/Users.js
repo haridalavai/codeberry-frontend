@@ -4,7 +4,7 @@ import './Users.css';
 const Users = ({ users }) => {
   return (
     <div className="users__list">
-      {users.users.map((user) => (
+      {users.map((user) => (
         <UserCard user={user} />
       ))}
     </div>
