@@ -1,16 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IconButton } from '@mui/material';
 import './Header.css';
+import SidenavCollapsable from './Sidenav-collapsable';
 // import { borderRadius } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
+import Close from '@mui/icons-material/Close';
 
 const Header = () => {
   const style = {};
+  const [open, setOpen] = useState(false);
+  console.log(open);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <>
+      <div className="sidenav__collapsable">
+        <SidenavCollapsable active={open} />
+        <IconButton
+          sx={{
+            width: '30px',
+            margin: '1rem',
+            padding: '1rem',
+            visibility: `${open ? 'visible' : 'hidden'}`,
+          }}
+          onClick={handleClose}
+        >
+          <Close />
+        </IconButton>
+      </div>
+
       <div className="hamburger">
-        <IconButton className="hamburger__button">
+        <IconButton className="hamburger__button" onClick={handleOpen}>
           <MenuIcon />
         </IconButton>
       </div>
