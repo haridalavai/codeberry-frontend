@@ -7,12 +7,8 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
-  /* identical to box height, or 150% */
-
-  /* 10 - Text Color/A. Light Mode/01 Text Primary */
-
   color: #212b36;
-  margin-top: 68px;
+  /* margin-top: 68px; */
   margin-left: 40px;
 }
 .users__userDashboard {
@@ -20,10 +16,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  /* identical to box height, or 157% */
-
-  /* 10 - Text Color/A. Light Mode/01 Text Primary */
-
   color: #212b36;
   margin-top: 8px;
   margin-left: 40px;
