@@ -1,0 +1,49 @@
+.header {
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden; */
+  position: fixed;
+  width: 90vw;
+  background-color: #fff;
+  z-index: 99;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+
+  flex: 0.2;
+  /* padding: 0 10rem; */
+  padding-right: 200px;
+}
+.avatar {
+  width: 44px;
+}
+.header__search {
+  padding: 0 2rem;
+}
+.header__rightIcon {
+  /* padding: 0 1rem;
+  border-radius: 100%; */
+  width: 30px;
+  height: 30px;
+  margin: 0.5rem;
+}
+.hamburger {
+  visibility: visible;
+  border: none;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+.hamburger__button {
+}
+@media only screen and (min-width: 600px) {
+  .hamburger {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    flex: 0;
+  }
+}

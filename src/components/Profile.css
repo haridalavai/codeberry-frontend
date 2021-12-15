@@ -1,0 +1,46 @@
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  width: 15rem;
+  background: #f4f6f8;
+  border-radius: 12px;
+}
+
+.profile__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-right: 3rem;
+}
+.profile__detailsName {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  /* 10 - Text Color/A. Light Mode/01 Text Primary */
+
+  color: #212b36;
+}
+.profile__detailsRole {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  /* 10 - Text Color/A. Light Mode/02 Text Secondary */
+
+  color: #637381;
+}
+.profile__image {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+  width: 40px;
+}

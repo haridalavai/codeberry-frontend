@@ -1,0 +1,55 @@
+.sidenav {
+  visibility: collapse;
+  width: 0;
+  height: 0;
+}
+
+.sidenav__profile {
+  margin-top: 6rem;
+  margin-bottom: 2.5rem;
+}
+.sidenav__sectionTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding-left: 40px;
+
+  /* 10 - Text Color/A. Light Mode/01 Text Primary */
+
+  color: #212b36;
+}
+.sidenav__navSection {
+  width: 100%;
+}
+.hamburger {
+  visibility: visible;
+  border: none;
+  background-color: #fff;
+  margin: 0.5rem;
+}
+.hamburger__button {
+}
+@media only screen and (min-width: 600px) {
+  .hamburger {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+  .sidenav {
+    /* width: 0;
+    height: 0; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: ; */
+    width: 25rem;
+    border-right: 1px solid #919eab3d;
+    height: 100vh;
+    box-shadow: inset -1px 0px 0px rgba(145, 158, 171, 0.24);
+    align-items: center;
+    visibility: visible;
+  }
+}

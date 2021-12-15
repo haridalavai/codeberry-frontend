@@ -1,0 +1,34 @@
+.socialDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  justify-content: space-between;
+}
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  text-align: center;
+
+  /* 10 - Text Color/A. Light Mode/02 Text Secondary */
+
+  color: #637381;
+}
+
+.number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  /* 10 - Text Color/A. Light Mode/01 Text Primary */
+
+  color: #212b36;
+}

@@ -1,0 +1,67 @@
+export const users = {
+  users: [
+    {
+      name: 'Fua Lamba',
+      designation: 'Project Manager',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Mar Rueda',
+      designation: 'Full Stack Developer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Frank Boehm',
+      designation: 'Full Stack Developer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Daya Chitanis',
+      designation: 'UI Designer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Clarke Gillberte',
+      designation: 'UI/UX Designer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Yara Baros',
+      designation: 'Front End Developer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Tikhon',
+      designation: 'HR Manager',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Nombeko',
+      designation: 'Back End Developer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+    {
+      name: 'Su Hau',
+      designation: 'UX Designer',
+      followers: '9.5k',
+      following: '49M',
+      posts: '96M',
+    },
+  ],
+};
