@@ -4,11 +4,11 @@ import Socials from './Socials';
 import SocialDetails from './SocialDetails';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import CloseIcon from '@mui/icons-material/Close';
+import EditUser from './EditUser';
 
 const UserCard = ({ user }) => {
   // const user = users.users[0];
@@ -18,7 +18,10 @@ const UserCard = ({ user }) => {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+    window.location.reload();
+  };
 
   const style = {
     position: 'absolute',
@@ -77,8 +80,7 @@ const UserCard = ({ user }) => {
           <IconButton aria-label="delete" onClick={handleClose}>
             <CloseIcon />
           </IconButton>
-
-          <h3>Edit User Page</h3>
+          <EditUser user={user} />
         </Box>
       </Modal>
     </>

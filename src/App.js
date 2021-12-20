@@ -6,6 +6,7 @@ import Users from './components/Users';
 import Socials from './components/Socials';
 import { users } from './users';
 import Header from './components/Header';
+import Create from './components/Create';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           width: '100%',
           height: '100vh',
           overflow: 'auto',
+          overflowX: 'hidden',
         }}
       >
         <Header />
@@ -24,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Body />} exact />
             <Route path="/about" element={<Socials />} />
+            <Route path="/create" element={<Create />} />
             {/* <Route path="/shop" component={Shop} /> */}
           </Routes>
         </div>

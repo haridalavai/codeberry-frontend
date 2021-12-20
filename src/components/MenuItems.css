@@ -38,6 +38,7 @@
 .menuitem__list {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .menuitem_listItem {
   height: 48px;
@@ -56,6 +57,7 @@
 }
 .menuitem__dot {
   margin: 0 1rem;
+  width: 4px;
 }
 
 .menuitem__listitem__active {
@@ -67,4 +69,8 @@
 }
 .menuitem_listItem:hover {
   background-color: #77e9b0;
+}
+.MuiMenu-list {
+  color: red;
+  height: 200px;
 }

@@ -11,8 +11,8 @@ const Body = () => {
     const users = await axios.get(
       'https://pure-coast-84901.herokuapp.com/users',
     );
-    setUsers(users.data);
-    console.log(users.data);
+    setUsers(users.data.users);
+    console.log(users.data.users);
   }, []);
   return (
     <div className="users">

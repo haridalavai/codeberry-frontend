@@ -1,0 +1,12 @@
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.profileImg {
+  /* transform: scale(10); */
+  width: 200px;
+  padding: 5rem;
+  margin: 10rem;
+}
